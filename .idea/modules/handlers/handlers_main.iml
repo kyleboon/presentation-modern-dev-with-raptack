@@ -13,6 +13,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-core:1.4.5" level="project" />
+    <orderEntry type="library" name="Gradle: io.ratpack:ratpack-handlebars:1.4.5" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-codec-http:4.1.6.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-handler:4.1.6.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: ch.qos.logback:logback-classic:1.1.7" level="project" />
@@ -28,6 +29,8 @@
     <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:1.15" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.7.5" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.7.5" level="project" />
+    <orderEntry type="library" name="Gradle: io.ratpack:ratpack-guice:1.4.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.jknack:handlebars:2.3.0" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-codec:4.1.6.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-buffer:4.1.6.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-transport:4.1.6.Final" level="project" />
@@ -35,6 +38,13 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: ch.qos.logback:logback-core:1.1.7" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.7.0" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.7.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.inject:guice:4.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.inject.extensions:guice-multibindings:4.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.antlr:antlr4-runtime:4.5.1-1" level="project" />
+    <orderEntry type="library" name="Gradle: org.mozilla:rhino:1.7R4" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-resolver:4.1.6.Final" level="project" />
+    <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
   </component>
 </module>

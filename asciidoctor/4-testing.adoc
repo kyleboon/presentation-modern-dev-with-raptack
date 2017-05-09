@@ -1,0 +1,58 @@
+Let's look at adding some tests before we start layering more functionality. I know the talk is advertised as java, but
+I'm going to use groovy and spock for the tests. There's nothing better for testing java code than spock. if you don't
+know these tools, you should still be able to follow along.
+
+update some dependencies:
+
+runtime 'org.apache.logging.log4j:log4j-slf4j-impl:2.2'
+    runtime 'org.apache.logging.log4j:log4j-api:2.2'
+    runtime 'org.apache.logging.log4j:log4j-core:2.2'
+    runtime 'com.lmax:disruptor:3.3.0'
+
+    testCompile ratpack.dependency('groovy-test')
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4', {
+        exclude module: 'groovy-all'
+    }
+
+here's the spec:
+
+
+class ReverseProxySpec extends Specification {
+    @Shared
+    ApplicationUnderTest aut = new MainClassApplicationUnderTest(App)
+
+    TestHttpClient client = aut.httpClient
+
+    @Shared
+    EmbeddedApp proxiedHost = GroovyEmbeddedApp.of {
+        handlers {
+            all {
+                render "rendered ${request.rawUri}"
+            }
+        }
+    }
+
+    def setupSpec() {
+        System.setProperty('ratpack.proxyConfig.host', proxiedHost.address.host)
+        System.setProperty('ratpack.proxyConfig.port', Integer.toString(proxiedHost.address.port))
+        System.setProperty('ratpack.proxyConfig.scheme', proxiedHost.address.scheme)
+    }
+
+    def "get request to ratpack is proxied to the embedded app"() {
+        expect:
+        client.getText(url) == "rendered /${url}"
+
+        where:
+        url << ["", "api", "about"]
+    }
+}
+
+talk about MainApplicationUnderTest
+
+EmbeddedApp
+
+system properties to override config
+
+there are also lots of test fixtures for unit testing handlers, but that's out of scope for today. This is a functional
+test, but it completed in 1s 71ms. I still use unit testing in ratpack for complex business logic, but I often use
+functional tests like this because I don't pay a penalty for it with ratpack.

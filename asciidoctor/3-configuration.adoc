@@ -5,13 +5,14 @@ places like heroku or kubernetes.
 First add the sever config:
 
 .serverConfig(sc -> { sc
-                            .props(Resources.asByteSource(Resources.getResource("application.properties")))
+                            .findBaseDir()
+                            .props("application.properties")
                             .env()
                             .sysProps()
                             .require("/proxyConfig", ProxyConfig.class);
                 })
 
-then add the application.properties
+then add the application.properties and .ratpack marker file
 
 
 

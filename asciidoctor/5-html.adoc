@@ -1,0 +1,30 @@
+Let's add an admin page to view the configuration at runtime.
+
+Add the dependency
+Add the module
+
+talk about modules. the primary method for organizing ratpack code. we're using guice to back our registry, you can
+use other stuff
+
+Add resources/handlebars/admin.html.hbs
+
+<html>
+  <head>
+      <title>Reverse Proxy Config</title>
+  </head>
+  <body>
+    <h1>Config Data</h1>
+    <ul>
+      <li>Proxied Host: {{ config.host }}</li>
+      <li>Proxied Port: {{ config.port }}</li>
+      <li>Proxied Scheme: {{ config.scheme }}</li>
+    </ul>
+  </body>
+</html>
+
+add the handlers
+
+.get("admin", ctx -> {
+                            ProxyConfig proxyConfig = ctx.get(ProxyConfig.class);
+                            ctx.render(handlebarsTemplate("admin.html", m -> m.put("config", proxyConfig)));
+                        })
