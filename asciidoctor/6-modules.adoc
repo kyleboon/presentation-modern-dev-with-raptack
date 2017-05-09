@@ -1,0 +1,30 @@
+Let's organize our code a bit better. Clearly you don't want all of your handlers and business logic inside a single
+class. I'm going to create two different modules for this application. An admin module and a proxy module
+
+show two different ways of loading handlers, injection and static methods - either works!
+
+import com.google.inject.AbstractModule;
+
+public class AdminModule extends AbstractModule {
+    protected void configure() {
+        bind(ConfigHandler.class);
+    }
+}
+
+import com.google.inject.Binder;
+import com.google.inject.Module;
+
+public class ProxyModule implements Module {
+    @Override
+    public void configure(Binder binder) {
+
+    }
+
+    static ProxyHandler proxyHandler() {
+        return new ProxyHandler();
+    }
+}
+
+Show how you can add the NCIS handler through Ratpack
+
+.all(RequestLogger.ncsa())
