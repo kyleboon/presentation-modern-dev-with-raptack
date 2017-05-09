@@ -21,11 +21,14 @@ class ProxyHandler implements Handler {
                 oUri.getQuery(),
                 oUri.getFragment());
 
-        httpClient.requestStream(proxyUri, requestSpec -> {
-            requestSpec.headers(mutableHeaders -> {
-                mutableHeaders.copy(ctx.getRequest().getHeaders());
+        ctx.getRequest().getBody().flatMap(incoming -> {
+            return httpClient.requestStream(proxyUri, requestSpec -> {
+                requestSpec.headers(mutableHeaders -> {
+                    mutableHeaders.copy(ctx.getRequest().getHeaders());
+                });
+                requestSpec.method(ctx.getRequest().getMethod());
+                requestSpec.body(b -> b.buffer(incoming.getBuffer()));
             });
-            requestSpec.method(ctx.getRequest().getMethod());
         }).then(responseStream -> {
             responseStream.forwardTo(ctx.getResponse());
         });
