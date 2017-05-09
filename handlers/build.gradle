@@ -1,0 +1,13 @@
+plugins {
+    id 'io.ratpack.ratpack-java' version '1.4.5'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    runtime 'ch.qos.logback:logback-classic:1.1.7'
+}
+
+mainClassName = 'App'

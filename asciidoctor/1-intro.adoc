@@ -1,0 +1,68 @@
+== Welcome!
+
+The code for this presentation is available at https://github.com/kyleboon/presentation-modern-dev-with-raptack.
+
+These notes are also available in https://[PDF format].
+
+My name is Kyle Boon. Thanks for coming! I'm now a Lead Engineer here at Target. I've been here 2.5 weeks so this
+talk is based on work I did as an engineer across the river at SmartThings, as well as a side project that I have called
+CellarHQ. CellarHQ was built on ratpack about 3 years ago and has been in production ever since.
+
+I have a series of blog posts called Zero to Ratpack that focuses on building a reverse proxy in ratpack using Groovy.
+The blog covers a lot of ground on core ratpack concepts that we'll talk about today. Today I'm going to cover as much
+as possible, and build a similar application in java.
+
+== What is modern web dev?
+
+Since the title of this talk is "modern" web dev, I should start be defining what modern means in this context. This is
+obviously subjective.
+
+* API focused
+
+Meaning focused on delivering JSON payloads for REST services. Although you can render HTML with Ratpack, it's not the
+primary use case. Naturally that's what I did with CellarHQ.
+
+* Focused on testability
+
+* Short feedback loop
+
+* Starts up fast
+
+* Implements "12-factor app" patterns. https://12factor.net/
+
+In general 12-factor apps are easy to deploy in a platform as a service world, or via docker containers.
+
+* Designed for java8 natively.
+
+They made the choice early on to not support older versions of java and start with a "clean" api for java8 natively.
+Of course with java 9 due this summer (july 27th?) we only have a few more months to claim this is a modern feature.
+
+I cheated of course and just described benefits of ratpack. There are other micro service libaries that have similar
+stories like Spring Boot or Dropwizard - but there are significant differences that we'll get into later.
+
+== What is ratpack
+
+It's easier to talk about what raptack is not.
+
+* Not MVC
+* Not Full stack
+* Not convention over configuration
+* Not an implementation of the servlet specification. (Which means no servlet container like jetty)
+
+What it is:
+
+* Built on top of netty
+* Async from the ground up. Almost all of the methods in the ratpack api operate on Promises. For example reading the
+body of a Request returns a promise, so does reading Session data.
+* just a series of composable libraries. In ratpack we call them modules and they provide functionality like sql
+connections, or dependency injection
+
+== Let's get coding
+
+We'll be using
+
+gradle 3.5
+java 1.8
+
+trying to live code this all, but all the code exists in github so if I fuck up, we can just look at it directly.
+

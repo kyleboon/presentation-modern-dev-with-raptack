@@ -1,0 +1,84 @@
+
+mkdir handlers
+cd handlers
+gradle init --type java-application
+idea build.gradle
+
+
+--
+
+plugins {
+    id 'io.ratpack.ratpack-java' version '1.4.5'
+}
+
+repositories {
+    jcenter()
+}
+
+mainClassName = 'App'
+
+-- App.java
+
+import ratpack.server.RatpackServer;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        RatpackServer.start(serverSpec -> serverSpec
+                .handlers(chain -> chain
+                        .get("hello", ctx -> ctx.render("Hello Skyway"))
+                )
+        );
+    }
+}
+
+
+this is the simplest possible ratpack app. it isn't short enough to fit in a tweet, but it would be if we used groovy!
+Show running through command line - gradle run
+
+now lets look at the simplest possible implementation of a proxy in ratpack.
+
+import ratpack.http.client.HttpClient;
+import ratpack.server.RatpackServer;
+
+import java.net.URI;
+
+public class App {
+    private static String HOST = "localhost";
+    private static int PORT = 5151;
+
+    public static void main(String[] args) throws Exception {
+        RatpackServer.start(serverSpec -> serverSpec
+                .handlers(chain -> chain
+                        .all(ctx -> {
+                            HttpClient httpClient = ctx.get(HttpClient.class);
+                            URI oUri = new URI(ctx.getRequest().getRawUri());
+
+                            URI proxyUri = new URI("http",
+                                    oUri.getUserInfo(),
+                                    HOST,
+                                    PORT,
+                                    oUri.getPath(),
+                                    oUri.getQuery(),
+                                    oUri.getFragment());
+
+                            httpClient.requestStream(proxyUri, requestSpec -> {
+                                requestSpec.headers( mutableHeaders -> {
+                                            mutableHeaders.copy(ctx.getRequest().getHeaders());
+                                        });
+                                requestSpec.method(ctx.getRequest().getMethod());
+                            }).then( responseStream -> {
+                                responseStream.forwardTo(ctx.getResponse());
+                            });
+                        })
+                )
+        );
+    }
+}
+
+talk about the all method.
+what is a chain?
+What is a handler
+What is the context?
+The registry and http client coming from the registry.
+Promise API as shown by httpClient.requestStrem
+
