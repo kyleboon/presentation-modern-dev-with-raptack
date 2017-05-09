@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/handlers/handlers.iml" filepath="$PROJECT_DIR$/.idea/modules/handlers/handlers.iml" group="handlers" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/handlers/handlers_main.iml" filepath="$PROJECT_DIR$/.idea/modules/handlers/handlers_main.iml" group="handlers" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/handlers/handlers_test.iml" filepath="$PROJECT_DIR$/.idea/modules/handlers/handlers_test.iml" group="handlers" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/presentation-modern-dev-with-raptack.iml" filepath="$PROJECT_DIR$/.idea/modules/presentation-modern-dev-with-raptack.iml" />
     </modules>
   </component>
