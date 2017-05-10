@@ -1,0 +1,21 @@
+== Resources
+
+Learning Ratpack (Book)::
+  http://shop.oreilly.com/product/0636920037545.do[Learning Ratpack] O'Reilly 2016 by https://twitter.com/danveloper[Dan Woods]
+
+Slack::
+  https://slack-signup.ratpack.io/[Official Ratpack Community Slack]
+
+User Guide and Javadoc::
+  https://ratpack.io/[Official Ratpack Website] (written in Ratpack of course)
+
+Forums::
+  https://forum.ratpack.io/[Official Ratpack Forums]
+
+Blogs::
+  * http://ldaley.com/[Luke Daley's blog]
+  * http://mrhaki.blogspot.com/[Mrhaki - Ratpacked]
+  * http://labs.adaptavist.com/code/2017/03/27/practical-ratpack-promises/[Practical Ratpack Promises]
+  * http://naleid.com/blog/2016/05/01/ratpack-executions-async-plus-serial-not-parallel/[Ratpack executions]
+
+

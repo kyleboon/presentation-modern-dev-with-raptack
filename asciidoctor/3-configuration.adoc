@@ -1,9 +1,12 @@
+== Configuration
+
 Let's look at configuration. It's one of the best features of ratpack - and a core tenent of 12-factor apps. Being able
 configure by layering files, environment variables and system properties is an important feature when deploying in
 places like heroku or kubernetes.
 
 First add the sever config:
 
+....
 .serverConfig(sc -> { sc
                             .findBaseDir()
                             .props("application.properties")
@@ -11,6 +14,7 @@ First add the sever config:
                             .sysProps()
                             .require("/proxyConfig", ProxyConfig.class);
                 })
+....
 
 then add the application.properties and .ratpack marker file
 
@@ -18,6 +22,7 @@ then add the application.properties and .ratpack marker file
 
 then use the config
 
+....
  ProxyConfig proxyConfig = ctx.get(ProxyConfig.class);
 
                             URI oUri = new URI(ctx.getRequest().getRawUri());
@@ -29,6 +34,6 @@ then use the config
                                     oUri.getPath(),
                                     oUri.getQuery(),
                                     oUri.getFragment());
-
+....
 
 demo!

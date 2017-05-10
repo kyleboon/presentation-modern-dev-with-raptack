@@ -1,9 +1,12 @@
+== Testing
+
 Let's look at adding some tests before we start layering more functionality. I know the talk is advertised as java, but
 I'm going to use groovy and spock for the tests. There's nothing better for testing java code than spock. if you don't
 know these tools, you should still be able to follow along.
 
 update some dependencies:
 
+....
 runtime 'org.apache.logging.log4j:log4j-slf4j-impl:2.2'
     runtime 'org.apache.logging.log4j:log4j-api:2.2'
     runtime 'org.apache.logging.log4j:log4j-core:2.2'
@@ -13,10 +16,11 @@ runtime 'org.apache.logging.log4j:log4j-slf4j-impl:2.2'
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4', {
         exclude module: 'groovy-all'
     }
+....
 
 here's the spec:
 
-
+....
 class ReverseProxySpec extends Specification {
     @Shared
     ApplicationUnderTest aut = new MainClassApplicationUnderTest(App)
@@ -46,6 +50,7 @@ class ReverseProxySpec extends Specification {
         url << ["", "api", "about"]
     }
 }
+....
 
 talk about MainApplicationUnderTest
 

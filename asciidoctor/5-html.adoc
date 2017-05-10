@@ -1,6 +1,13 @@
-Let's add an admin page to view the configuration at runtime.
+== HTML rendering
+
+I said ratpack was API focused, but of course it can render HTML as well. Let's add an admin page to view the configuration at runtime.
 
 Add the dependency
+
+....
+compile ratpack.dependency('handlebars')
+....
+
 Add the module
 
 talk about modules. the primary method for organizing ratpack code. we're using guice to back our registry, you can
@@ -8,6 +15,7 @@ use other stuff
 
 Add resources/handlebars/admin.html.hbs
 
+....
 <html>
   <head>
       <title>Reverse Proxy Config</title>
@@ -21,12 +29,15 @@ Add resources/handlebars/admin.html.hbs
     </ul>
   </body>
 </html>
+....
 
 add the handlers
 
+....
 .get("admin", ctx -> {
                             ProxyConfig proxyConfig = ctx.get(ProxyConfig.class);
                             ctx.render(handlebarsTemplate("admin.html", m -> m.put("config", proxyConfig)));
                         })
+....
 
-demo the order of the handlers. before and after the all handler.
+Demo the order of the handlers. Show that order matters, first handler wins!

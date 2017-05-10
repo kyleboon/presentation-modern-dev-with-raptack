@@ -1,8 +1,11 @@
+== Modules
+
 Let's organize our code a bit better. Clearly you don't want all of your handlers and business logic inside a single
 class. I'm going to create two different modules for this application. An admin module and a proxy module
 
 show two different ways of loading handlers, injection and static methods - either works!
 
+....
 import com.google.inject.AbstractModule;
 
 public class AdminModule extends AbstractModule {
@@ -10,7 +13,11 @@ public class AdminModule extends AbstractModule {
         bind(ConfigHandler.class);
     }
 }
+....
 
+This method binds a handler class into the registry using Guice.
+
+....
 import com.google.inject.Binder;
 import com.google.inject.Module;
 
@@ -24,7 +31,13 @@ public class ProxyModule implements Module {
         return new ProxyHandler();
     }
 }
+....
 
-Show how you can add the NCIS handler through Ratpack
+This method just provides a way to get handler classes and doesn't use guice. A lot of standard ratpack
+modules use this method.
 
+Show how you can add the NCSA handler through Ratpack
+
+....
 .all(RequestLogger.ncsa())
+....

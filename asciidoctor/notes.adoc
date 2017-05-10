@@ -1,0 +1,19 @@
+= Modern JVM development with Ratpack
+Kyle Boon <https://github.com/kyleboon[icon:github[] @kyleboon] https://twitter.com/kyleboon[icon:twitter[] @kyleboon]>
+2017 May 10
+
+include::1-intro.adoc[]
+
+include::2-handlers.adoc[]
+
+include::3-configuration.adoc[]
+
+include::4-testing.adoc[]
+
+include::5-html.adoc[]
+
+include::6-modules.adoc[]
+
+include::7-database.adoc[]
+
+include::8-resources.adoc[]

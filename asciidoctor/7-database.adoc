@@ -1,9 +1,12 @@
+== Database Access
+
 We've come to the last part of the live coding portion. (hope there's time?) We're going to add some simple database
 access using Jooq. I'm going to be kind of hand-wavey about jooq because there isn't time to discuss it in detail.
 Basically it's a type safe way to build SQL queries.
 
 First we need to update the build script:
 
+....
 buildscript {
     repositories {
         jcenter()
@@ -42,25 +45,30 @@ task jooqCodegen {
         GenerationTool.generate(configuration)
     }
 }
+....
 
 init.sql
 
+....
 DROP TABLE IF EXISTS todo;
 CREATE TABLE blacklist (
   `id` bigint auto_increment primary key,
   `path` varchar(256)
 )
+....
 
 For demonstration purposes, we're just using an in memory h2 database. After adding the gradle task for code generation
 and the "schema" then we can run gradle jooqCodegen and it will build the java classes we need. Now we can start
 configuring ratpack.
 
+....
 .module(HikariModule.class, config -> {
                             config.setDataSourceClassName("org.h2.jdbcx.JdbcDataSource");
                             config.addDataSourceProperty(
                                     "URL",
                                     "jdbc:h2:mem:todo;INIT=RUNSCRIPT FROM 'classpath:/init.sql'");
                         })
+....
 
 Hikari provides a jdbc connection, and the module is configured much like any other. In this case we're manually setting
 some properties instead of driving them from a properties file - but that's very similar to what we've already seen.
@@ -68,6 +76,7 @@ some properties instead of driving them from a properties file - but that's very
 Now we're going to create a repository for our crud operations and a module to provide the funcitonality to the ratpack
 application.
 
+....
 public class BlackListModel {
     long id;
     String host;
@@ -88,7 +97,9 @@ public class BlackListModel {
         this.host = host;
     }
 }
+....
 
+....
 public class BlackListRepository {
     private final DSLContext context;
 
@@ -113,10 +124,11 @@ public class BlackListRepository {
                 .next(Blocking.op(record::refresh))
                 .map(() -> record.into(BlackListModel.class));
     }
-
+....
 
 Also add the jooq module to the app. Add the blacklist handler.
 
+....
 public class BlackListHandler implements Handler {
     BlackListRepository repository;
 
@@ -139,19 +151,21 @@ public class BlackListHandler implements Handler {
         );
     }
 }
+....
 
 Demo adding the black list and retrieving from it.
 
+....
 http http://localhost:5050/admin/blacklist
 http POST http://localhost:5050/admin/blacklist host="0:0:0:0:0:0:0:1"
+http http://localhost:5050/admin/blacklist
+....
 
 we use ipv6 because we're modern damnit
 
-http http://localhost:5050/admin/blacklist
-
 Now that we can do the rest thing for our black list, we will use it somewhere. this is the final piece of the demo.
 
-
+....
 public class RestrictHostHandler implements Handler {
     private static Logger logger = LoggerFactory.getLogger(RestrictHostHandler.class);
 
@@ -171,9 +185,8 @@ public class RestrictHostHandler implements Handler {
         });
     }
 }
-
+....
 
 wire it up and demo.
 
 The important part here is the difference between rendering a response and calling context.next()
-
