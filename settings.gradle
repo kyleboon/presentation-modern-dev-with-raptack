@@ -9,6 +9,6 @@
  */
 
 
-include 'handlers'
+include 'demo'
 
 rootProject.name = 'presentation-modern-dev-with-raptack'
