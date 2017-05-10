@@ -12,6 +12,9 @@
     <orderEntry type="module" module-name="handlers_main" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-core:1.4.5" level="project" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-handlebars:1.4.5" level="project" />
+    <orderEntry type="library" name="Gradle: io.ratpack:ratpack-hikari:1.4.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.h2database:h2:1.4.186" level="project" />
+    <orderEntry type="library" name="Gradle: org.jooq:jooq:3.8.1" level="project" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-test:1.4.5" level="project" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-groovy-test:1.4.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: ch.qos.logback:logback-classic:1.1.7" level="project" />
@@ -32,6 +35,7 @@
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.7.5" level="project" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-guice:1.4.5" level="project" />
     <orderEntry type="library" name="Gradle: com.github.jknack:handlebars:2.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.zaxxer:HikariCP:2.3.5" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.groovy:groovy-all:2.4.3" level="project" />
     <orderEntry type="library" name="Gradle: io.ratpack:ratpack-groovy:1.4.5" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.21" level="project" />
@@ -48,9 +52,9 @@
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.1" level="project" />
     <orderEntry type="library" name="Gradle: org.antlr:antlr4-runtime:4.5.1-1" level="project" />
     <orderEntry type="library" name="Gradle: org.mozilla:rhino:1.7R4" level="project" />
+    <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-resolver:4.1.6.Final" level="project" />
-    <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="handlers_main" />

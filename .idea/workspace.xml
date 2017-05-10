@@ -2,8 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3f3c9de-9508-4bc2-9cc8-87c3772b0aad" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asciidoctor/2-handlers.adoc" afterPath="$PROJECT_DIR$/asciidoctor/2-handlers.adoc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/src/main/java/ProxyHandler.java" afterPath="$PROJECT_DIR$/handlers/src/main/java/ProxyHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_h2database_h2_1_4_186.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zaxxer_HikariCP_2_3_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_ratpack_ratpack_hikari_1_4_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jooq_jooq_3_8_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asciidoctor/7-database.adoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/java/BlackListHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/java/BlackListModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/java/BlackListRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/java/JooqModule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/java/RestrictHostHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/java/jooq/DefaultCatalog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/java/jooq/Keys.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/java/jooq/Public.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/java/jooq/Sequences.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/java/jooq/Tables.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/java/jooq/tables/Blacklist.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/java/jooq/tables/records/BlacklistRecord.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/src/main/resources/init.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/handlers/handlers_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/handlers/handlers_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/handlers/handlers_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/handlers/handlers_test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/build.gradle" afterPath="$PROJECT_DIR$/handlers/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/src/main/java/AdminModule.java" afterPath="$PROJECT_DIR$/handlers/src/main/java/AdminModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/src/main/java/App.java" afterPath="$PROJECT_DIR$/handlers/src/main/java/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/src/main/java/ProxyModule.java" afterPath="$PROJECT_DIR$/handlers/src/main/java/ProxyModule.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -46,11 +71,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JooqModule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handlers/src/main/java/JooqModule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+              <folding>
+                <element signature="e#602#603#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlackListRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handlers/src/main/java/BlackListRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="27" column="59" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#442#443#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminModule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handlers/src/main/java/AdminModule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#194#195#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/handlers/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="480">
+              <caret line="32" column="60" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestrictHostHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handlers/src/main/java/RestrictHostHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,47 +141,22 @@
       <file leaf-file-name="ProxyModule.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handlers/src/main/java/ProxyModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="120">
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
               <folding>
-                <element signature="e#133#134#0" expanded="true" />
-                <element signature="e#174#175#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProxyHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handlers/src/main/java/ProxyHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="33" column="11" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="33" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2-handlers.adoc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/asciidoctor/2-handlers.adoc">
+      <file leaf-file-name="7-database.adoc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/asciidoctor/7-database.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="288">
-                <caret line="75" column="39" lean-forward="false" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="6-modules.adoc" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/asciidoctor/6-modules.adoc">
-          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="332">
-                <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+              <first_editor relative-caret-position="340">
+                <caret line="177" column="97" lean-forward="false" selection-start-line="177" selection-start-column="97" selection-end-line="177" selection-end-column="97" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -129,7 +184,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.sdkman/candidates/gradle/3.5" />
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-all/exhrs6ca08n232b14ue48lbye/gradle-3.5" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -284,6 +339,10 @@
                 <option name="description" value="Runs all checks." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jooqCodegen" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles the outputs of this project." />
@@ -451,6 +510,10 @@
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/handlers" />
+                <option name="name" value="jooqCodegen" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles the outputs of this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/handlers" />
                 <option name="name" value="assemble" />
@@ -568,10 +631,10 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5977377043000" />
+        <entry key="$PROJECT_DIR$" value="5977389845000" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3671967155" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1114575256" />
-        <entry key="$PROJECT_DIR$/handlers/build.gradle" value="2672644217" />
+        <entry key="$PROJECT_DIR$/handlers/build.gradle" value="3965087771" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="948118271" />
       </map>
     </option>
@@ -618,7 +681,15 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jruby/jruby-complete/1.7.21/e061b9f399a5e8d5cfcca84d4a6baf879111e83c/jruby-complete-1.7.21.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/a80acda9d5c2aa80afb8b6f858968b24a178f4bc/jcommander-1.35-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/47592e181b0bdbbeb63029e08c5e74f6803c4edd/jcommander-1.35.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.h2database/h2/1.4.186/998d0bfee826479e4fb8bb229c3f998aa10afd03/h2-1.4.186-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.h2database/h2/1.4.186/cd59cafd63c07654a406cc675719e80dc313ffb9/h2-1.4.186.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jooq/jooq-codegen/3.8.1/1076104cafde566bb1b09ae51a7efc59f4756b0a/jooq-codegen-3.8.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jooq/jooq-codegen/3.8.1/7758b960d37907052e2d7cb464ed8e49a0f074ac/jooq-codegen-3.8.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/gradle.plugin.io.ratpack/ratpack-gradle/1.4.5/20772163963bc2947b918e965e112fb7cd3666/ratpack-gradle-1.4.5.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jooq/jooq/3.8.1/f2b365673a709ff99b0d71ee4a6d3dee66160c38/jooq-3.8.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jooq/jooq/3.8.1/12dd5ec441e48417218752f4373e1c379c15c6a7/jooq-3.8.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jooq/jooq-meta/3.8.1/1f6d96a6151b82f9aaa647e46f3a88f282f56e9b/jooq-meta-3.8.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jooq/jooq-meta/3.8.1/22f0a605fdad9eaa2415d141fd7d042f76039d1c/jooq-meta-3.8.1.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/handlers" />
@@ -810,17 +881,25 @@
         <option value="$PROJECT_DIR$/handlers/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/asciidoctor/4-testing.adoc" />
         <option value="$PROJECT_DIR$/handlers/src/test/groovy/ReverseProxySpec.groovy" />
-        <option value="$PROJECT_DIR$/handlers/build.gradle" />
         <option value="$PROJECT_DIR$/handlers/src/main/resources/handlebars/admin.html.hbs" />
         <option value="$PROJECT_DIR$/asciidoctor/3-configuration.adoc" />
         <option value="$PROJECT_DIR$/asciidoctor/5-html.adoc" />
-        <option value="$PROJECT_DIR$/handlers/src/main/java/AdminModule.java" />
         <option value="$PROJECT_DIR$/handlers/src/main/java/ConfigHandler.java" />
-        <option value="$PROJECT_DIR$/handlers/src/main/java/ProxyModule.java" />
         <option value="$PROJECT_DIR$/asciidoctor/6-modules.adoc" />
-        <option value="$PROJECT_DIR$/handlers/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/handlers/src/main/java/ProxyHandler.java" />
         <option value="$PROJECT_DIR$/asciidoctor/2-handlers.adoc" />
+        <option value="$PROJECT_DIR$/handlers/src/main/resources/init.sql" />
+        <option value="$PROJECT_DIR$/handlers/build.gradle" />
+        <option value="$PROJECT_DIR$/handlers/src/main/java/AdminModule.java" />
+        <option value="$PROJECT_DIR$/handlers/src/main/java/BlackListHandler.java" />
+        <option value="$PROJECT_DIR$/handlers/src/main/java/BlackListItem.java" />
+        <option value="$PROJECT_DIR$/handlers/src/main/java/BlackListModel.java" />
+        <option value="$PROJECT_DIR$/handlers/src/main/java/App.java" />
+        <option value="$PROJECT_DIR$/handlers/src/main/java/BlackListRepository.java" />
+        <option value="$PROJECT_DIR$/handlers/src/main/java/ProxyModule.java" />
+        <option value="$PROJECT_DIR$/handlers/src/main/java/RestrictHostHandler.java" />
+        <option value="$PROJECT_DIR$/handlers/src/main/java/JooqModule.java" />
+        <option value="$PROJECT_DIR$/asciidoctor/7-database.adoc" />
       </list>
     </option>
   </component>
@@ -831,7 +910,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="103" />
+    <option name="x" value="19" />
     <option name="y" value="23" />
     <option name="width" value="1397" />
     <option name="height" value="802" />
@@ -1135,6 +1214,108 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="handlers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jooq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentation-modern-dev-with-raptack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentation-modern-dev-with-raptack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handlers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jooq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentation-modern-dev-with-raptack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentation-modern-dev-with-raptack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handlers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jooq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="records" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentation-modern-dev-with-raptack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentation-modern-dev-with-raptack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="asciidoctor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1155,6 +1336,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/handlers/src/main/resources/handlebars" />
       <recent name="$PROJECT_DIR$/handlers/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -1595,7 +1779,7 @@
       <option name="presentableId" value="Default" />
       <updated>1494074118911</updated>
       <workItem from="1494074127091" duration="496000" />
-      <workItem from="1494074641457" duration="22730000" />
+      <workItem from="1494074641457" duration="31714000" />
     </task>
     <servers />
   </component>
@@ -1611,10 +1795,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23226000" />
+    <option name="totallyTimeSpent" value="32210000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="103" y="23" width="1397" height="802" extended-state="0" />
+    <frame x="19" y="23" width="1397" height="802" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1812,14 +1996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="50" lean-forward="false" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ratpack/ratpack-handlebars/1.4.5/ced81aa3f3cbf192809a3b73b30ed483ebe014b4/ratpack-handlebars-1.4.5-sources.jar!/ratpack/handlebars/Template.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1943,27 +2119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/ConfigHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="88" lean-forward="false" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/AdminModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="e#123#124#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asciidoctor/5-html.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
@@ -1993,31 +2148,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/ProxyModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/handlers/src/main/java/ProxyHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
-          <caret line="33" column="11" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="33" selection-end-column="11" />
+          <caret line="33" column="11" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="33" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2038,11 +2172,201 @@
     <entry file="file://$PROJECT_DIR$/asciidoctor/6-modules.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="332">
-            <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <first_editor relative-caret-position="272">
+            <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/jooq/tables/records/BlacklistRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <marker date="1494417309000" expanded="true" signature="3537:3545" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/jooq/tables/Blacklist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <marker date="1494417309000" expanded="true" signature="1669:1742" ph="/**...*/" />
+            <marker date="1494417309000" expanded="false" signature="1765:1776" ph=" { " />
+            <marker date="1494417309000" expanded="false" signature="1800:1806" ph=" }" />
+            <marker date="1494417309000" expanded="true" signature="1812:1894" ph="/**...*/" />
+            <marker date="1494417309000" expanded="false" signature="1929:1940" ph=" { " />
+            <marker date="1494417309000" expanded="false" signature="1963:1969" ph=" }" />
+            <marker date="1494417309000" expanded="false" signature="2038:2049" ph=" { " />
+            <marker date="1494417309000" expanded="false" signature="2076:2082" ph=" }" />
+            <marker date="1494417309000" expanded="true" signature="2175:2235" ph="{...}" />
+            <marker date="1494417309000" expanded="true" signature="2241:2273" ph="/**...*/" />
+            <marker date="1494417309000" expanded="false" signature="2317:2328" ph=" { " />
+            <marker date="1494417309000" expanded="false" signature="2349:2355" ph=" }" />
+            <marker date="1494417309000" expanded="true" signature="2361:2393" ph="/**...*/" />
+            <marker date="1494417309000" expanded="false" signature="2464:2475" ph=" { " />
+            <marker date="1494417309000" expanded="false" signature="2506:2512" ph=" }" />
+            <marker date="1494417309000" expanded="true" signature="2518:2550" ph="/**...*/" />
+            <marker date="1494417309000" expanded="false" signature="2618:2629" ph=" { " />
+            <marker date="1494417309000" expanded="false" signature="2654:2660" ph=" }" />
+            <marker date="1494417309000" expanded="true" signature="2666:2698" ph="/**...*/" />
+            <marker date="1494417309000" expanded="true" signature="2767:2851" ph="{...}" />
+            <marker date="1494417309000" expanded="false" signature="2791:2819" ph="&lt;~&gt;" />
+            <marker date="1494417309000" expanded="true" signature="2857:2889" ph="/**...*/" />
+            <marker date="1494417309000" expanded="false" signature="2941:2952" ph=" { " />
+            <marker date="1494417309000" expanded="false" signature="2986:2992" ph=" }" />
+            <marker date="1494417309000" expanded="true" signature="2998:3034" ph="/**...*/" />
+            <marker date="1494417309000" expanded="false" signature="3075:3086" ph=" { " />
+            <marker date="1494417309000" expanded="false" signature="3119:3125" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="27" column="65" lean-forward="false" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+          <folding>
+            <element signature="e#686#713#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/src/main/resources/init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ratpack/ratpack-core/1.4.5/2e16cd8ac1a52892cdf920292dc94ef1cb98b3de/ratpack-core-1.4.5-sources.jar!/ratpack/http/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="335" column="14" lean-forward="false" selection-start-line="335" selection-start-column="14" selection-end-line="335" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/ProxyModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/BlackListModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="e#85#86#0" expanded="true" />
+            <element signature="e#110#111#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/ConfigHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="88" lean-forward="false" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/BlackListHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/RestrictHostHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asciidoctor/7-database.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="340">
+            <caret line="177" column="97" lean-forward="false" selection-start-line="177" selection-start-column="97" selection-end-line="177" selection-end-column="97" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/JooqModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding>
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/BlackListRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="27" column="59" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/AdminModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="60" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
